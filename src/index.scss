@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-image: url('./img/fondo.png');
+}
+
+.btn {
+    background: #A0C4FF;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 5px 15px;
+
+    &:hover {
+        background: rgba(#A0C4FF, .8);
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+
+    h1 {
+        color: white;
+        margin-bottom: 40px;
+    }
+
+}
+
+.card {
+    background: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px 40px 50px;
+
+
+    h2 {
+        font-weight: 300;
+        letter-spacing: 3px;
+        margin: 0 0 20px;
+    }
+
+    .warning {
+        background: #FFADAD;
+        color: #ff0000;
+        font-size: 12px;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+
+    form {
+        margin-top: 30px;
+
+        p {
+            text-align: start;
+            margin-bottom: 5px;
+        }
+
+        input {
+            margin-bottom: 15px;
+            padding: 5px 10px;
+            width: 100%;
+        }
+
+        button {
+            background: #D08C60;
+            border-style: none;
+            color: #f2f2f2;
+            cursor: pointer;
+            padding: 6px 0;
+            text-transform: uppercase;
+            width: 100%;
+
+            &:hover {
+                background: rgba(#D08C60, .8);
+            }
+        }
+    }
+
+}
+
+.presupuesto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    div {
+        width: 49%;
+    }
+
+    .gastos {
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+        margin-bottom: 10px;
+        padding: 10px 5px;
+        width: 100%;
+
+        .gasto {
+            align-items: baseline;
+            ;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .gasto-cantidad {
+                background: #997B66;
+                border-radius: 5px;
+                color: white;
+                padding: 10px 10px;
+            }
+        }
+    }
+
+    .contador {
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 15px 10px;
+        text-align: start;
+        width: 100%;
+    }
+
+    .presupuesto {
+        background: #A0C4FF;
+    }
+
+    .green {
+        background: #CAFFBF;
+    }
+
+    .yellow {
+        background: #FDFFB6;
+        color: green;
+    }
+
+    .red {
+        background: #FFADAD;
+        color: #ff0000;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .presupuesto {
+        div {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+}
